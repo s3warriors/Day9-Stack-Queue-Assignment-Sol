@@ -8,7 +8,14 @@ class Queue<T> {
         list.addLast(data);
     }
 
+    // UC4: Dequeue elements from queue
+    public T dequeue() {
+        return list.isEmpty() ? null : list.removeFirst();
+    }
 
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
 
     public void printQueue() {
         System.out.println(list);

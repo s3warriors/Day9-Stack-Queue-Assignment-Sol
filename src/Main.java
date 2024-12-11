@@ -26,6 +26,11 @@ public class Main {
         System.out.println("Queue after enqueue operations:");
         queue.printQueue();
 
+        // UC4: Queue dequeue operations
+        while (!queue.isEmpty()) {
+            System.out.println("Dequeued: " + queue.dequeue());
+            queue.printQueue();
+        }
     }
 }
 
