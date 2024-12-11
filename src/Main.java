@@ -11,7 +11,12 @@ public class Main {
         stack.push(56);
         System.out.println("Stack after push operations:");
         stack.printStack();
-
+        // UC2: Stack peek and pop operations
+        while (!stack.isEmpty()) {
+            System.out.println("Top element: " + stack.peek());
+            System.out.println("Popped: " + stack.pop());
+            stack.printStack();
+        }
     }
 }
 
